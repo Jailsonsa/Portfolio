@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Recebe essa altura, pra me ja ter uma referecia da porcentagem*/
+}
+
+.parent{
+    display: flex;
+}
+
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: #0D0000;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar{
+    text-align: center;
+}
+
+.img-sidebar img{
+    width: 65%;
+    border-radius: 7%;
+    border: 8px solid #593A2E;
+}
+
+.img-sidebar img:hover{
+    border: 8px solid #D9A566;
+    box-shadow: 1px 1px 15px #D9A566;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu a{
+    color: #D9A566;
+    opacity:0.4;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 28px;
+    text-decoration: none;
+}
+
+.menu a.selected{
+    opacity: 1;
+}
+
+.menu a:hover{
+    opacity: 1;
+}
+
+section.content{
+    position: absolute;
+    left: 20%;
+    width: 80% ;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 5%;
+}
+
+section.descricao{
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+section.descricao h2{
+    color: #593A2E;
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+section.descricao h2 > span,
+section.descricao h3 > span
+{
+    color: #D9A566;
+    
+}
+
+section.descricao h3{
+    color: rgb(174, 174, 174);
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+section.descricao p{
+    color:#7a5015;
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 3%;
+}
+
+.icons-social img{
+   margin: 25px 10px;
+   width: 5%;
+   
+}
+
